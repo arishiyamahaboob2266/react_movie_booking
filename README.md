@@ -1,1 +1,1 @@
-# react_movie_booking
+# react_movie_booking app
