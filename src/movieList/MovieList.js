@@ -1,5 +1,6 @@
 import Header from '../Header';
 import MovieItem from './MovieItem';
+import SelectSeats from './booking/SelectSeats';
 
 
 function MovieList(props) {
@@ -11,6 +12,8 @@ function MovieList(props) {
             <div className='container'>
                 
                 <h1 className='my-0 py-4'>Movies</h1>
+
+                <SelectSeats />
 
                 <ul className='list-unstyled row gx-3 gy-3'>
                     <MovieItem />

@@ -20,6 +20,7 @@ function Home(props) {
                     <Link to="/login" className="btn btn-primary btn-lg">
                      Login
                     </Link>
+                
                 }
             </div>
         </>

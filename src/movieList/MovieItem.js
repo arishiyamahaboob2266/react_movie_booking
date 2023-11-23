@@ -24,6 +24,7 @@ function MovieItem(props) {
 
     return (
         <>
+
         { movies.map( (movie)=>(
             <li className="col-sm-3" key={movie.id}>
                 <div className='card '>
