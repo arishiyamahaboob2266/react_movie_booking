@@ -1,0 +1,14 @@
+.time-slot-selector{
+    max-width:300px;
+    margin:auto;
+}
+ul{
+    cursor:pointer;
+    padding:8px;
+    margin:4px;
+    border:1px solid #ccc
+}
+li:hover{
+    background-color: #3498db;
+    color: #fff;
+}
