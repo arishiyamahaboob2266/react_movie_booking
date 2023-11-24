@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 function MovieItem(props) {
     const [movies, setMovies] = useState([]);
 
+
     const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
 
     useEffect(()=>{
@@ -22,6 +23,7 @@ function MovieItem(props) {
         setMovies(responseJson.results)
     }
 
+
     return (
         <>
 
@@ -30,10 +32,18 @@ function MovieItem(props) {
                 <div className='card '>
                     <img src={IMG_PATH + movie.poster_path} className="card-img-top" alt="..." />
                     <div className="card-body">
+                        {/* Movie Title */}
                         <h5 className="card-title">{movie.title}</h5>
                         <p className="card-text">Language: {movie.original_language}</p>
                         <p className='h5'>Rs: 180/ per seat</p>
-                        <a href="#" className="btn btn-primary">Book Ticket</a>
+
+                        {/* Booking button */}
+                        <button 
+                            onClick={props.handleBooking} 
+                            data-movie-id = { movie.title  } 
+                            className="btn btn-primary">
+                                Book Ticket
+                        </button>
                     </div>
                 </div>
             </li>
