@@ -1,6 +1,7 @@
 import Header from '../Header';
 import MovieItem from './MovieItem';
 import SelectSeats from './booking/SelectSeats';
+import SelectTime from './booking/SelectTime';
 
 
 function MovieList(props) {

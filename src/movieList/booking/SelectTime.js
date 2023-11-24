@@ -1,10 +1,10 @@
 import React,{useState}from 'react'
 
-const TimeSlotSelector=()=>{
+const SelectTime=()=>{
     const[selectedTime,SetSelectedTime]=useState(null);
 
 //time slot
-const availableTimeSlots=['10:00 AM','11:00 AM','2:00 AM','3:00 AM'];
+const availableTimeSlots=['10:00 AM','11:00 AM','2:00 PM','3:00 PM'];
 const handleTimeSlotSelect=(time)=>{
       SetSelectedTime(time);
     };
@@ -20,4 +20,5 @@ const handleTimeSlotSelect=(time)=>{
     </div>
 )
 };
+export default SelectTime;
             
